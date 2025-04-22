@@ -16,5 +16,10 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             InitializeComponent();
         }
+
+        private void btn_start_click(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
