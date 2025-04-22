@@ -68,6 +68,7 @@
             this.btn_start.TabIndex = 1;
             this.btn_start.Text = "Start";
             this.btn_start.UseVisualStyleBackColor = false;
+            this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
             // lbl_menu
             // 
@@ -108,6 +109,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "BUKAN (Budi Daya Ikan)";
             this.menu.ResumeLayout(false);

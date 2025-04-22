@@ -21,5 +21,11 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
 
         }
+
+        private void btn_start_Click(object sender, EventArgs e)
+        {
+            Profile profile = new Profile();
+            profile.ShowDialog();
+        }
     }
 }
