@@ -37,7 +37,7 @@ namespace BUKAN_Budi_Daya_Ikan_
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error: " + ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -68,7 +68,7 @@ namespace BUKAN_Budi_Daya_Ikan_
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error: " + ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -111,6 +111,35 @@ namespace BUKAN_Budi_Daya_Ikan_
             {
                 DataGridViewRow row = this.dgv_Profile.Rows[e.RowIndex];
                 txtbox_profile.Text = row.Cells[0].Value.ToString();
+            }
+        }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+            if(dgv_Profile.SelectedCells.Count > 0)
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    try
+                    {
+                        connection.Open();
+                        string query = "UPDATE Profile SET playerName = @playerName WHERE playerName = @oldPlayerName";
+                        SqlCommand command = new SqlCommand(query, connection);
+                        command.Parameters.AddWithValue("@playerName", txtbox_profile.Text);
+                        command.Parameters.AddWithValue("@oldPlayerName", dgv_Profile.SelectedCells[0].Value.ToString());
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Profile updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        loadData();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a profile to update.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
