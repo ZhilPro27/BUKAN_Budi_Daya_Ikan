@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUKAN_Budi_Daya_Ikan_.Game_Object;
 
 namespace BUKAN_Budi_Daya_Ikan_
 {
@@ -16,5 +17,7 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             InitializeComponent();
         }
+
+        public static List<Food> Foodlist = new List<Food>();
     }
 }
