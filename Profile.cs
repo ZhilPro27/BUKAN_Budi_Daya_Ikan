@@ -37,5 +37,10 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             loadData();
         }
+
+        private void clearTextBox()
+        {
+            txtbox_profile.Clear();
+        }
     }
 }
