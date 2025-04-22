@@ -100,5 +100,14 @@ namespace BUKAN_Budi_Daya_Ikan_
                 }
             }
         }
+
+        private void dgv_Profile_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dgv_Profile.Rows[e.RowIndex];
+                txtbox_profile.Text = row.Cells[0].Value.ToString();
+            }
+        }
     }
 }

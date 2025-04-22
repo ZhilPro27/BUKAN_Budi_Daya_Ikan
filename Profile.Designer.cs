@@ -122,6 +122,7 @@
             this.dgv_Profile.Name = "dgv_Profile";
             this.dgv_Profile.Size = new System.Drawing.Size(240, 157);
             this.dgv_Profile.TabIndex = 9;
+            this.dgv_Profile.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Profile_CellClick);
             // 
             // txtbox_profile
             // 
