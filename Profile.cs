@@ -32,5 +32,10 @@ namespace BUKAN_Budi_Daya_Ikan_
                 dgv_Profile.DataSource = dataTable;
             }
         }
+
+        private void Profile_Load(object sender, EventArgs e)
+        {
+            loadData();
+        }
     }
 }
