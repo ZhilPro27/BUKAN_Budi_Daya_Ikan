@@ -99,6 +99,10 @@ namespace BUKAN_Budi_Daya_Ikan_
                     }
                 }
             }
+            else
+            {
+                MessageBox.Show("Please select a profile to delete.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void dgv_Profile_CellClick(object sender, DataGridViewCellEventArgs e)
