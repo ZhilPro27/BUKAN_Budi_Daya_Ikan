@@ -61,7 +61,7 @@ namespace BUKAN_Budi_Daya_Ikan_
                     connection.Open();
                     string query = "INSERT INTO Profile (playerName) VALUES (@playerName)";
                     SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@name", txtbox_profile.Text);
+                    command.Parameters.AddWithValue("@playerName", txtbox_profile.Text);
                     command.ExecuteNonQuery();
                     MessageBox.Show("Profile created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     loadData();
