@@ -142,5 +142,10 @@ namespace BUKAN_Budi_Daya_Ikan_
                 MessageBox.Show("Please select a profile to update.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

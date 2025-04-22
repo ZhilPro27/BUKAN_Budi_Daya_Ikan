@@ -111,6 +111,7 @@
             this.Controls.Add(this.menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BUKAN (Budi Daya Ikan)";
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
