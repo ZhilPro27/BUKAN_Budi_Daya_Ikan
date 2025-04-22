@@ -147,5 +147,12 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             this.Close();
         }
+
+        private void btn_start_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Game game = new Game();
+            game.Show();
+        }
     }
 }
