@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbl_menu = new System.Windows.Forms.Label();
             this.lbl_money = new System.Windows.Forms.Label();
             this.btn_add__fish = new System.Windows.Forms.Button();
             this.btn_end = new System.Windows.Forms.Button();
+            this.timerFoods = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lbl_menu
@@ -76,6 +78,11 @@
             this.btn_end.Text = "END";
             this.btn_end.UseVisualStyleBackColor = false;
             // 
+            // timerFoods
+            // 
+            this.timerFoods.Interval = 1000;
+            this.timerFoods.Tick += new System.EventHandler(this.Food_Generator);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,5 +108,6 @@
         private System.Windows.Forms.Label lbl_money;
         private System.Windows.Forms.Button btn_add__fish;
         private System.Windows.Forms.Button btn_end;
+        private System.Windows.Forms.Timer timerFoods;
     }
 }

@@ -19,5 +19,17 @@ namespace BUKAN_Budi_Daya_Ikan_
         }
 
         public static List<Food> Foodlist = new List<Food>();
+
+        private void Food_Generator(object sender, EventArgs e)
+        {
+            Random r = new Random();
+
+            int x = r.Next(20, 300);
+            int y = r.Next(20, 300);
+            Food f = new Food(x, y);
+            Controls.Add(f);
+
+            Foodlist.Add(f);
+        }
     }
 }
