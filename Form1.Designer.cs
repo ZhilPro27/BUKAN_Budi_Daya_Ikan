@@ -109,7 +109,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menu);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "BUKAN (Budi Daya Ikan)";
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.ResumeLayout(false);
