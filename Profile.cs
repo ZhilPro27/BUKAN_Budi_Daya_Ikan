@@ -51,5 +51,26 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             txtbox_profile.Clear();
         }
+
+        private void btn_newProfile_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    string query = "INSERT INTO Profile (playerName) VALUES (@playerName)";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@name", txtbox_profile.Text);
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Profile created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    loadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
