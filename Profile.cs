@@ -24,12 +24,21 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                connection.Open();
-                string query = "SELECT * FROM Profile";
-                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                DataTable dataTable = new DataTable();
-                adapter.Fill(dataTable);
-                dgv_Profile.DataSource = dataTable;
+                try
+                {
+                    connection.Open();
+                    string query = "SELECT * FROM Profile";
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+                    dgv_Profile.DataSource = dataTable;
+
+                    clearTextBox();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
