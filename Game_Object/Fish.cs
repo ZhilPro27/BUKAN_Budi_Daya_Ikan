@@ -12,6 +12,7 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
     {
         private PictureBox pictureBox1;
 
+        private int speed = 4;
         public Fish()
         {
             InitializeComponent();
@@ -50,6 +51,16 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
 
         }
 
+        private void Update(object sender, EventArgs e)
+        {
+            Food f = getClosest();
+
+            if (f != null)
+            {
+                Move(f.Location.X, f.Location.Y, speed);
+            }
+        }
+
         public void Move(int x, int y, float speed)
         {
             Point pt = Location;
@@ -70,6 +81,30 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
                 pt.Y = y;
                 Location = new Point(pt.X, pt.Y);
             }
+        }
+
+        private Food getClosest()
+        {
+            Food f = null;
+            int distClosest = 10000;
+            
+            if(core.Foodlist.Count > 0)
+            {
+                foreach(var item in core.Foodlist)
+                {
+                    float tx = item.Location.X - Location.X;
+                    float ty = item.Location.Y - Location.Y;
+
+                    int length = (int)Math.Sqrt(tx * tx + ty * ty);
+
+                    if (length < distClosest)
+                    {
+                        distClosest = length;
+                        f = item;
+                    }
+                }
+            }
+            return f;
         }
     }
 }
