@@ -56,19 +56,26 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                try
+                if(txtbox_profile.Text.Count() != 0)
                 {
-                    connection.Open();
-                    string query = "INSERT INTO Profile (playerName) VALUES (@playerName)";
-                    SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@playerName", txtbox_profile.Text);
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Profile created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    loadData();
+                    try
+                    {
+                        connection.Open();
+                        string query = "INSERT INTO Profile (playerName) VALUES (@playerName)";
+                        SqlCommand command = new SqlCommand(query, connection);
+                        command.Parameters.AddWithValue("@playerName", txtbox_profile.Text);
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Profile created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        loadData();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("Error: " + ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error: Text Box is Empty", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
