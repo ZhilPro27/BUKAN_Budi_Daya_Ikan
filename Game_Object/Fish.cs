@@ -11,7 +11,8 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
     public class Fish : UserControl
     {
         private PictureBox pictureBox1;
-
+        private Timer timer1;
+        private System.ComponentModel.IContainer components;
         private int speed = 4;
         public Fish()
         {
@@ -20,8 +21,10 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
 
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fish));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -35,7 +38,13 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Gatherer
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 33;
+            this.timer1.Tick += new System.EventHandler(this.Update);
+            // 
+            // Fish
             // 
             this.Controls.Add(this.pictureBox1);
             this.Name = "Fish";

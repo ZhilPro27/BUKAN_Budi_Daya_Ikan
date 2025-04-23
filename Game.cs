@@ -34,9 +34,11 @@ namespace BUKAN_Budi_Daya_Ikan_
 
         private void Update(object sender, EventArgs e)
         {
-            foreach(Food food in core.Foodlist)
+            List<Food> foodToRemove = new List<Food>();
+            foodToRemove.AddRange(core.Foodlist);
+            foreach (Food food in foodToRemove)
             {
-                foreach(Fish fish in Controls.OfType<Fish>())
+                foreach (Fish fish in Controls.OfType<Fish>())
                 {
                     if (fish.Bounds.IntersectsWith(food.Bounds))
                     {
