@@ -79,6 +79,7 @@
             this.btn_end.TabIndex = 7;
             this.btn_end.Text = "END";
             this.btn_end.UseVisualStyleBackColor = false;
+            this.btn_end.Click += new System.EventHandler(this.btn_end_Click);
             // 
             // timerFoods
             // 

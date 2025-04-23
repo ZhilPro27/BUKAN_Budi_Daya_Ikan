@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUKAN_Budi_Daya_Ikan_.Game_Object;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,6 @@ namespace BUKAN_Budi_Daya_Ikan_
     public partial class Profile : Form
     {
         private string connectionString = "Data Source=DESKTOP-FP1P0A6\\ZHILALKRISNA;Initial Catalog=BUKAN_db;Integrated Security=True";
-
         public Profile()
         {
             InitializeComponent();
@@ -150,9 +150,18 @@ namespace BUKAN_Budi_Daya_Ikan_
 
         private void btn_start_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Game game = new Game();
-            game.Show();
+            if (dgv_Profile.SelectedCells.Count == 0)
+            {
+                MessageBox.Show("Please select a profile to start the game.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else
+            {
+                core.playerName = dgv_Profile.SelectedCells[0].Value.ToString();
+                this.Close();
+                Game game = new Game();
+                game.Show();
+            }
         }
     }
 }

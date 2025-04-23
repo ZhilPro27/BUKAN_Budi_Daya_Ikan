@@ -27,5 +27,10 @@ namespace BUKAN_Budi_Daya_Ikan_
             Profile profile = new Profile();
             profile.ShowDialog();
         }
+
+        private void btn_highscore_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

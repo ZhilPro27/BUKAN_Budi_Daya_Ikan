@@ -57,6 +57,7 @@
             this.btn_highscore.TabIndex = 2;
             this.btn_highscore.Text = "highscore";
             this.btn_highscore.UseVisualStyleBackColor = false;
+            this.btn_highscore.Click += new System.EventHandler(this.btn_highscore_Click);
             // 
             // btn_start
             // 
