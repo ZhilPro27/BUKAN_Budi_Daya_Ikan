@@ -44,9 +44,17 @@ namespace BUKAN_Budi_Daya_Ikan_
                     {
                         Controls.Remove(food);
                         core.Foodlist.Remove(food);
+
+                        AddScore();
                     }
                 }
             }
+        }
+
+        void AddScore()
+        {
+            core.score += 1;
+            lbl_score.Text = "Score = " + core.score.ToString();
         }
     }
 }

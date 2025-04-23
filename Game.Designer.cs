@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lbl_menu = new System.Windows.Forms.Label();
+            this.lbl_score = new System.Windows.Forms.Label();
             this.lbl_money = new System.Windows.Forms.Label();
             this.btn_add__fish = new System.Windows.Forms.Button();
             this.btn_end = new System.Windows.Forms.Button();
             this.timerFoods = new System.Windows.Forms.Timer(this.components);
-            this.fish1 = new BUKAN_Budi_Daya_Ikan_.Game_Object.Fish();
             this.timerUpdate = new System.Windows.Forms.Timer(this.components);
+            this.fish1 = new BUKAN_Budi_Daya_Ikan_.Game_Object.Fish();
             this.SuspendLayout();
             // 
-            // lbl_menu
+            // lbl_score
             // 
-            this.lbl_menu.AutoSize = true;
-            this.lbl_menu.Font = new System.Drawing.Font("Aladin", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_menu.Location = new System.Drawing.Point(12, 9);
-            this.lbl_menu.Name = "lbl_menu";
-            this.lbl_menu.Size = new System.Drawing.Size(76, 24);
-            this.lbl_menu.TabIndex = 1;
-            this.lbl_menu.Text = "Score = ";
+            this.lbl_score.AutoSize = true;
+            this.lbl_score.Font = new System.Drawing.Font("Aladin", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_score.Location = new System.Drawing.Point(12, 9);
+            this.lbl_score.Name = "lbl_score";
+            this.lbl_score.Size = new System.Drawing.Size(76, 24);
+            this.lbl_score.TabIndex = 1;
+            this.lbl_score.Text = "Score = ";
             // 
             // lbl_money
             // 
@@ -86,18 +86,18 @@
             this.timerFoods.Interval = 2000;
             this.timerFoods.Tick += new System.EventHandler(this.Food_Generator);
             // 
+            // timerUpdate
+            // 
+            this.timerUpdate.Enabled = true;
+            this.timerUpdate.Interval = 33;
+            this.timerUpdate.Tick += new System.EventHandler(this.Update);
+            // 
             // fish1
             // 
             this.fish1.Location = new System.Drawing.Point(365, 140);
             this.fish1.Name = "fish1";
             this.fish1.Size = new System.Drawing.Size(77, 63);
             this.fish1.TabIndex = 8;
-            // 
-            // timerUpdate
-            // 
-            this.timerUpdate.Enabled = true;
-            this.timerUpdate.Interval = 33;
-            this.timerUpdate.Tick += new System.EventHandler(this.Update);
             // 
             // Game
             // 
@@ -109,7 +109,7 @@
             this.Controls.Add(this.btn_end);
             this.Controls.Add(this.btn_add__fish);
             this.Controls.Add(this.lbl_money);
-            this.Controls.Add(this.lbl_menu);
+            this.Controls.Add(this.lbl_score);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -121,7 +121,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbl_menu;
+        private System.Windows.Forms.Label lbl_score;
         private System.Windows.Forms.Label lbl_money;
         private System.Windows.Forms.Button btn_add__fish;
         private System.Windows.Forms.Button btn_end;
