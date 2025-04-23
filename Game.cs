@@ -31,5 +31,20 @@ namespace BUKAN_Budi_Daya_Ikan_
 
             core.Foodlist.Add(f);
         }
+
+        private void Update(object sender, EventArgs e)
+        {
+            foreach(Food food in core.Foodlist)
+            {
+                foreach(Fish fish in Controls.OfType<Fish>())
+                {
+                    if (fish.Bounds.IntersectsWith(food.Bounds))
+                    {
+                        Controls.Remove(food);
+                        core.Foodlist.Remove(food);
+                    }
+                }
+            }
+        }
     }
 }
