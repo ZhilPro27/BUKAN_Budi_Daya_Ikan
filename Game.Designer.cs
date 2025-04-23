@@ -80,6 +80,7 @@
             // 
             // timerFoods
             // 
+            this.timerFoods.Enabled = true;
             this.timerFoods.Interval = 1000;
             this.timerFoods.Tick += new System.EventHandler(this.Food_Generator);
             // 

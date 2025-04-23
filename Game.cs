@@ -18,7 +18,7 @@ namespace BUKAN_Budi_Daya_Ikan_
             InitializeComponent();
         }
 
-        public static List<Food> Foodlist = new List<Food>();
+        
 
         private void Food_Generator(object sender, EventArgs e)
         {
@@ -29,7 +29,7 @@ namespace BUKAN_Budi_Daya_Ikan_
             Food f = new Food(x, y);
             Controls.Add(f);
 
-            Foodlist.Add(f);
+            core.Foodlist.Add(f);
         }
     }
 }
