@@ -24,8 +24,8 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             Random r = new Random();
 
-            int x = r.Next(20, 300);
-            int y = r.Next(20, 300);
+            int x = r.Next(20, 850);
+            int y = r.Next(20, 530);
             Food f = new Food(x, y);
             Controls.Add(f);
 
