@@ -41,6 +41,7 @@
             // lbl_score
             // 
             this.lbl_score.AutoSize = true;
+            this.lbl_score.BackColor = System.Drawing.Color.Transparent;
             this.lbl_score.Font = new System.Drawing.Font("Aladin", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_score.Location = new System.Drawing.Point(12, 9);
             this.lbl_score.Name = "lbl_score";
@@ -51,6 +52,7 @@
             // lbl_money
             // 
             this.lbl_money.AutoSize = true;
+            this.lbl_money.BackColor = System.Drawing.Color.Transparent;
             this.lbl_money.Font = new System.Drawing.Font("Aladin", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_money.Location = new System.Drawing.Point(12, 46);
             this.lbl_money.Name = "lbl_money";
@@ -90,11 +92,12 @@
             // timerUpdate
             // 
             this.timerUpdate.Enabled = true;
-            this.timerUpdate.Interval = 33;
+            this.timerUpdate.Interval = 5;
             this.timerUpdate.Tick += new System.EventHandler(this.Update);
             // 
             // fish1
             // 
+            this.fish1.BackColor = System.Drawing.Color.Transparent;
             this.fish1.Location = new System.Drawing.Point(365, 140);
             this.fish1.Name = "fish1";
             this.fish1.Size = new System.Drawing.Size(77, 63);
@@ -105,6 +108,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::BUKAN_Budi_Daya_Ikan_.Properties.Resources.Background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(890, 519);
             this.Controls.Add(this.fish1);
             this.Controls.Add(this.btn_end);
@@ -113,6 +118,7 @@
             this.Controls.Add(this.lbl_score);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Game";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game";
             this.ResumeLayout(false);

@@ -33,7 +33,7 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 69);
+            this.pictureBox1.Size = new System.Drawing.Size(77, 63);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -49,14 +49,8 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
             this.Controls.Add(this.pictureBox1);
             this.Name = "Fish";
             this.Size = new System.Drawing.Size(77, 63);
-            this.Load += new System.EventHandler(this.Gatherer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-
-        }
-
-        private void Gatherer_Load(object sender, EventArgs e)
-        {
 
         }
 

@@ -19,15 +19,14 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             InitializeComponent();
         }
-
-        
+     
 
         private void Food_Generator(object sender, EventArgs e)
         {
             Random r = new Random();
 
             int x = r.Next(20, 850);
-            int y = r.Next(20, 530);
+            int y = r.Next(50, 530);
             Food f = new Food(x, y);
             Controls.Add(f);
 

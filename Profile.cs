@@ -75,7 +75,7 @@ namespace BUKAN_Budi_Daya_Ikan_
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            if (dgv_Profile.SelectedCells.Count > 0)
+            if ((dgv_Profile.SelectedCells.Count > 0) && (txtbox_profile.Text != ""))
             {
                 DialogResult result = MessageBox.Show("Are you sure you want to delete this profile?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
@@ -150,7 +150,7 @@ namespace BUKAN_Budi_Daya_Ikan_
 
         private void btn_start_Click(object sender, EventArgs e)
         {
-            if (dgv_Profile.SelectedCells.Count == 0)
+            if ((dgv_Profile.SelectedCells.Count == 0) || (txtbox_profile.Text == ""))
             {
                 MessageBox.Show("Please select a profile to start the game.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
