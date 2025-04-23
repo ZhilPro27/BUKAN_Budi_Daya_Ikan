@@ -123,7 +123,7 @@ namespace BUKAN_Budi_Daya_Ikan_
 
         private void btn_update_Click(object sender, EventArgs e)
         {
-            if(dgv_Profile.SelectedCells.Count > 0)
+            if((dgv_Profile.SelectedCells.Count > 0) && (txtbox_profile.Text.Count() != 0))
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
