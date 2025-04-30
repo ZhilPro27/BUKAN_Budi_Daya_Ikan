@@ -70,6 +70,7 @@ namespace BUKAN_Budi_Daya_Ikan_
                     command.Parameters.AddWithValue("@score", core.score);
                     command.Parameters.AddWithValue("@palyerName", core.playerName);
                     command.ExecuteNonQuery();
+                    connection.Close();
                     this.Close();
                     Form1 form1 = new Form1();
                     form1.ShowDialog();
