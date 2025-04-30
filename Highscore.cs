@@ -22,6 +22,8 @@ namespace BUKAN_Budi_Daya_Ikan_
         private void btn_back_Click(object sender, EventArgs e)
         {
             this.Close();
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
         }
 
         private void loadData()

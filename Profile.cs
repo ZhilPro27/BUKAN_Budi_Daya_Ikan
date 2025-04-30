@@ -34,6 +34,7 @@ namespace BUKAN_Budi_Daya_Ikan_
                     dgv_Profile.DataSource = dataTable;
 
                     clearTextBox();
+                    connection.Close();
                 }
                 catch (Exception ex)
                 {
@@ -67,6 +68,7 @@ namespace BUKAN_Budi_Daya_Ikan_
                         command.ExecuteNonQuery();
                         MessageBox.Show("Profile created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         loadData();
+                        connection.Close();
                     }
                     catch (Exception ex)
                     {
@@ -98,6 +100,7 @@ namespace BUKAN_Budi_Daya_Ikan_
                             command.ExecuteNonQuery();
                             MessageBox.Show("Profile deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             loadData();
+                            connection.Close();
                         }
                         catch (Exception ex)
                         {
@@ -137,6 +140,7 @@ namespace BUKAN_Budi_Daya_Ikan_
                         command.ExecuteNonQuery();
                         MessageBox.Show("Profile updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         loadData();
+                        connection.Close();
                     }
                     catch (Exception ex)
                     {
@@ -153,6 +157,8 @@ namespace BUKAN_Budi_Daya_Ikan_
         private void btn_back_Click(object sender, EventArgs e)
         {
             this.Close();
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
         }
 
         private void btn_start_Click(object sender, EventArgs e)
@@ -168,6 +174,7 @@ namespace BUKAN_Budi_Daya_Ikan_
                 this.Close();
                 Game game = new Game();
                 game.Show();
+
             }
         }
     }

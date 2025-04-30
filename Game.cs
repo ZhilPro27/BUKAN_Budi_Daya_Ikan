@@ -26,7 +26,7 @@ namespace BUKAN_Budi_Daya_Ikan_
             Random r = new Random();
 
             int x = r.Next(20, 850);
-            int y = r.Next(50, 530);
+            int y = r.Next(50, 500);
             Food f = new Food(x, y);
             Controls.Add(f);
 
@@ -71,6 +71,8 @@ namespace BUKAN_Budi_Daya_Ikan_
                     command.Parameters.AddWithValue("@palyerName", core.playerName);
                     command.ExecuteNonQuery();
                     this.Close();
+                    Form1 form1 = new Form1();
+                    form1.ShowDialog();
                 }
                 catch (Exception ex)
                 {

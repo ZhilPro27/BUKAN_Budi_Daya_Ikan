@@ -45,9 +45,9 @@
             this.lbl_score.Font = new System.Drawing.Font("Aladin", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_score.Location = new System.Drawing.Point(12, 9);
             this.lbl_score.Name = "lbl_score";
-            this.lbl_score.Size = new System.Drawing.Size(76, 24);
+            this.lbl_score.Size = new System.Drawing.Size(71, 24);
             this.lbl_score.TabIndex = 1;
-            this.lbl_score.Text = "Score = ";
+            this.lbl_score.Text = "Score =";
             // 
             // lbl_money
             // 
@@ -56,9 +56,9 @@
             this.lbl_money.Font = new System.Drawing.Font("Aladin", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_money.Location = new System.Drawing.Point(12, 46);
             this.lbl_money.Name = "lbl_money";
-            this.lbl_money.Size = new System.Drawing.Size(81, 24);
+            this.lbl_money.Size = new System.Drawing.Size(76, 24);
             this.lbl_money.TabIndex = 2;
-            this.lbl_money.Text = "Money = ";
+            this.lbl_money.Text = "Money =";
             // 
             // btn_add__fish
             // 
@@ -117,8 +117,9 @@
             this.Controls.Add(this.lbl_money);
             this.Controls.Add(this.lbl_score);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Game";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game";
             this.ResumeLayout(false);
