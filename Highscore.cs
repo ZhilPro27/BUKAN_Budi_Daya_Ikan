@@ -38,6 +38,7 @@ namespace BUKAN_Budi_Daya_Ikan_
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
                     dgv_Highscore.DataSource = dataTable;
+                    connection.Close();
                 }
                 catch (Exception ex)
                 {
