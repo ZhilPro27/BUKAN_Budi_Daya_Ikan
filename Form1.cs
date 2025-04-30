@@ -21,12 +21,14 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             Profile profile = new Profile();
             profile.Show();
+            this.Hide();
         }
 
         private void btn_highscore_Click(object sender, EventArgs e)
         {
             Highscore highscore = new Highscore();
             highscore.ShowDialog();
+            this.Hide();
         }
     }
 }
