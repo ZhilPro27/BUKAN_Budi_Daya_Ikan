@@ -110,14 +110,25 @@ namespace BUKAN_Budi_Daya_Ikan_
 
         private void btn_addFish_click(object sender, EventArgs e)
         {
-            int x = core.random.Next(50, 850);
-            int y = core.random.Next(50, 400);
+            int hargaIkan = 5;
+            if (core.money >= hargaIkan)
+            {
+                core.money -= hargaIkan;
+                lbl_money.Text = "Money = " + core.money;
 
-            Fish newFish = new Fish();
-            newFish.Location = new Point(x, y);
+                int x = core.random.Next(50, 850);
+                int y = core.random.Next(50, 400);
 
-            this.Controls.Add(newFish);
-            core.Fishlist.Add(newFish);
+                Fish newFish = new Fish();
+                newFish.Location = new Point(x, y);
+
+                this.Controls.Add(newFish);
+                core.Fishlist.Add(newFish);
+            }
+            else 
+            { 
+                MessageBox.Show("Uang tidak cukup untuk membeli ikan!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
+            }
         }
 
         private void CheckGameOver()
