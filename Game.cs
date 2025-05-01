@@ -54,6 +54,19 @@ namespace BUKAN_Budi_Daya_Ikan_
                     }
                 }
             }
+
+            List<Fish> fishToRemove = new List<Fish>(core.Fishlist);
+            foreach (Fish fish in fishToRemove)
+            {
+                foreach (Enemy enemy in Controls.OfType<Enemy>())
+                {
+                    if (enemy.Bounds.IntersectsWith(fish.Bounds))
+                    {
+                        Controls.Remove(fish);
+                        core.Fishlist.Remove(fish);
+                    }
+                }
+            }
         }
 
         void AddScore()

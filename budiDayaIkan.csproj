@@ -70,6 +70,9 @@
     <Compile Include="Game_Object\Fish.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Game_Object\Enemy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Highscore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Game_Object\Fish.resx">
       <DependentUpon>Fish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game_Object\Enemy.resx">
+      <DependentUpon>Enemy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Highscore.resx">
       <DependentUpon>Highscore.cs</DependentUpon>
@@ -184,6 +190,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FishOrange_Left\FishOrange_Left8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Left\EnemyShark_Left1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Left\EnemyShark_Left2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Left\EnemyShark_Left3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Left\EnemyShark_Left4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Left\EnemyShark_Left5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Left\EnemyShark_Left6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Left\EnemyShark_Left7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Left\EnemyShark_Left8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right8.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

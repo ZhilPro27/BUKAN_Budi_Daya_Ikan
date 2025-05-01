@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D;
 
 
 namespace BUKAN_Budi_Daya_Ikan_.Game_Object
@@ -23,7 +22,7 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
         private List<Image> fishFramesLeft;
         private Timer animationTimer;
         private int currentFrame = 0;
-        private bool movingRight = true;
+        private bool movingRight;
 
         public Fish()
         {
@@ -112,15 +111,15 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
 
             if (f != null)
             {
-                Move(f.Location.X, f.Location.Y, speed);
+                MoveFish(f.Location.X, f.Location.Y, speed);
             }
             else
             {
-                Move(randomTarget.X, randomTarget.Y, (speed - 3));
+                MoveFish(randomTarget.X, randomTarget.Y, (speed - 3));
             }
         }
 
-        public void Move(int x, int y, float speed)
+        public void MoveFish(int x, int y, float speed)
         {
             Point pt = Location;
 

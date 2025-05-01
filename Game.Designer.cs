@@ -35,7 +35,6 @@
             this.btn_end = new System.Windows.Forms.Button();
             this.timerFoods = new System.Windows.Forms.Timer(this.components);
             this.timerUpdate = new System.Windows.Forms.Timer(this.components);
-            this.fish1 = new BUKAN_Budi_Daya_Ikan_.Game_Object.Fish();
             this.SuspendLayout();
             // 
             // lbl_score
@@ -96,14 +95,6 @@
             this.timerUpdate.Interval = 5;
             this.timerUpdate.Tick += new System.EventHandler(this.Update);
             // 
-            // fish1
-            // 
-            this.fish1.BackColor = System.Drawing.Color.Transparent;
-            this.fish1.Location = new System.Drawing.Point(229, 107);
-            this.fish1.Name = "fish1";
-            this.fish1.Size = new System.Drawing.Size(77, 63);
-            this.fish1.TabIndex = 8;
-            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -115,7 +106,6 @@
             this.Controls.Add(this.lbl_score);
             this.Controls.Add(this.lbl_money);
             this.Controls.Add(this.btn_add__fish);
-            this.Controls.Add(this.fish1);
             this.Controls.Add(this.btn_end);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -135,7 +125,6 @@
         private System.Windows.Forms.Button btn_add__fish;
         private System.Windows.Forms.Button btn_end;
         private System.Windows.Forms.Timer timerFoods;
-        private Game_Object.Fish fish1;
         private System.Windows.Forms.Timer timerUpdate;
     }
 }
