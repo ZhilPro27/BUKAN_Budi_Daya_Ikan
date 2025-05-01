@@ -22,19 +22,28 @@ namespace BUKAN_Budi_Daya_Ikan_
             this.DoubleBuffered = true;
             this.SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
             this.UpdateStyles();
-
+            timerEnemy.Interval = core.random.Next(30000, 60001);
         }
 
         private void Food_Generator(object sender, EventArgs e)
         {
-            Random r = new Random();
-
-            int x = r.Next(50, 850);
-            int y = r.Next(50, 400);
+            int x = core.random.Next(50, 850);
+            int y = core.random.Next(50, 400);
             Food f = new Food(x, y);
             Controls.Add(f);
 
             core.Foodlist.Add(f);
+        }
+
+        private void Enemy_Generator(object sender, EventArgs e)
+        {
+            int x = core.random.Next(50, 850);
+            int y = core.random.Next(50, 400);
+            Enemy enemy = new Enemy();
+            enemy.Location = new Point(x, y);
+
+            Controls.Add(enemy);
+            core.Enemylist.Add(enemy);
         }
 
         private void Update(object sender, EventArgs e)
@@ -102,9 +111,8 @@ namespace BUKAN_Budi_Daya_Ikan_
 
         private void btn_addFish_click(object sender, EventArgs e)
         {
-            Random r = new Random();
-            int x = r.Next(50, 850);
-            int y = r.Next(50, 400);
+            int x = core.random.Next(50, 850);
+            int y = core.random.Next(50, 400);
 
             Fish newFish = new Fish();
             newFish.Location = new Point(x, y);

@@ -1,4 +1,6 @@
-﻿namespace BUKAN_Budi_Daya_Ikan_
+﻿using System;
+
+namespace BUKAN_Budi_Daya_Ikan_
 {
     partial class Game
     {
@@ -35,6 +37,7 @@
             this.btn_end = new System.Windows.Forms.Button();
             this.timerFoods = new System.Windows.Forms.Timer(this.components);
             this.timerUpdate = new System.Windows.Forms.Timer(this.components);
+            this.timerEnemy = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lbl_score
@@ -95,6 +98,11 @@
             this.timerUpdate.Interval = 5;
             this.timerUpdate.Tick += new System.EventHandler(this.Update);
             // 
+            // timerEnemy
+            // 
+            this.timerEnemy.Enabled = true;
+            this.timerEnemy.Tick += new System.EventHandler(this.Enemy_Generator);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,5 +134,6 @@
         private System.Windows.Forms.Button btn_end;
         private System.Windows.Forms.Timer timerFoods;
         private System.Windows.Forms.Timer timerUpdate;
+        private System.Windows.Forms.Timer timerEnemy;
     }
 }
