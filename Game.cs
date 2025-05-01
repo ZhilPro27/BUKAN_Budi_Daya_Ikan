@@ -59,7 +59,8 @@ namespace BUKAN_Budi_Daya_Ikan_
                         Controls.Remove(food);
                         core.Foodlist.Remove(food);
 
-                        AddScore();
+                        core.AddScore();
+                        lbl_score.Text = "Score = " + core.score;
                     }
                 }
             }
@@ -78,12 +79,8 @@ namespace BUKAN_Budi_Daya_Ikan_
                     }
                 }
             }
-        }
 
-        void AddScore()
-        {
-            core.score += 1;
-            lbl_score.Text = "Score = " + core.score.ToString();
+            lbl_money.Text = "Money = " + core.money;
         }
 
         private void btn_end_Click(object sender, EventArgs e)

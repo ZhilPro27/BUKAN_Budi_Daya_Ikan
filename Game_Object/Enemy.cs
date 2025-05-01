@@ -19,6 +19,8 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
         private System.ComponentModel.IContainer components;
         private Timer AnimationTimer;
         private bool MovingRight = true;
+        private int hitCount = 0;
+        private int maxHits = 5;
 
         public Enemy()
         {
@@ -49,6 +51,9 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
                 Properties.Resources.EnemyShark_Left7,
                 Properties.Resources.EnemyShark_Left8,
             };
+
+            img_Enemy.Click += img_Enemy_Click;
+            this.Click += Enemy_Click;
         }
 
         private void InitializeComponent()
@@ -170,5 +175,36 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
                 img_Enemy.Image = enemyFramesLeft[currentFrame];
             }
         }
+
+        private void Enemy_Click(object sender, EventArgs e) 
+        { 
+            RegisterHit(); 
+        }
+
+        private void img_Enemy_Click(object sender, EventArgs e) 
+        { 
+            RegisterHit(); 
+        }
+
+        private void RegisterHit()
+        {
+            hitCount++;
+            if (hitCount >= maxHits)
+            {
+                // Enemy mati, hapus dari parent control dan core list
+                if (this.Parent != null)
+                {
+                    this.Parent.Controls.Remove(this);
+                }
+                core.Enemylist.Remove(this);
+                core.AddMoney();
+                // Bisa tambahkan efek kematian atau suara di sini
+            }
+            else
+            {
+                // Bisa tambahkan efek klik, misal flash atau animasi kecil
+            }
+        }
+
     }
 }

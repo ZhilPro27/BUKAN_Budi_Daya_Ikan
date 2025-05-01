@@ -13,6 +13,16 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
         public static List<Enemy> Enemylist = new List<Enemy>();
         public static Random random = new Random();
         public static int score = 0;
+        public static int money = 10;
         public static string playerName = "";
+        public static void AddScore()
+        {
+            core.score += 1;
+        }
+
+        public static void AddMoney()
+        {
+            core.money += 20;
+        }
     }
 }
