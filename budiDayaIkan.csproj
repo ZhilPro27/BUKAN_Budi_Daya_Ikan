@@ -137,5 +137,53 @@
   <ItemGroup>
     <None Include="Resources\Food.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Left\FishOrange_Left1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Right\FishOrange_Right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Right\FishOrange_Right2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Right\FishOrange_Right3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Right\FishOrange_Right4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Right\FishOrange_Right5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Right\FishOrange_Right6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Right\FishOrange_Right7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Right\FishOrange_Right8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Left\FishOrange_Left2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Left\FishOrange_Left3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Left\FishOrange_Left4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Left\FishOrange_Left5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Left\FishOrange_Left6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Left\FishOrange_Left7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FishOrange_Left\FishOrange_Left8.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
