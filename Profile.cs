@@ -20,6 +20,16 @@ namespace BUKAN_Budi_Daya_Ikan_
             InitializeComponent();
         }
 
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParams = base.CreateParams;
+                handleParams.ExStyle |= 0x02000000;
+                return handleParams;
+            }
+        }
+
         private void loadData()
         {
             using (SqlConnection connection = new SqlConnection(connectionString))

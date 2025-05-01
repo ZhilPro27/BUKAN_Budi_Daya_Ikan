@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.menu = new System.Windows.Forms.Panel();
+            this.btn_close = new System.Windows.Forms.Button();
             this.btn_highscore = new System.Windows.Forms.Button();
             this.btn_start = new System.Windows.Forms.Button();
             this.lbl_menu = new System.Windows.Forms.Label();
@@ -40,6 +41,7 @@
             // menu
             // 
             this.menu.BackColor = System.Drawing.Color.Transparent;
+            this.menu.Controls.Add(this.btn_close);
             this.menu.Controls.Add(this.btn_highscore);
             this.menu.Controls.Add(this.btn_start);
             this.menu.Controls.Add(this.lbl_menu);
@@ -48,11 +50,23 @@
             this.menu.Size = new System.Drawing.Size(238, 222);
             this.menu.TabIndex = 1;
             // 
+            // btn_close
+            // 
+            this.btn_close.BackColor = System.Drawing.Color.LightCoral;
+            this.btn_close.Font = new System.Drawing.Font("Indigo Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_close.Location = new System.Drawing.Point(72, 169);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(94, 38);
+            this.btn_close.TabIndex = 3;
+            this.btn_close.Text = "Exit";
+            this.btn_close.UseVisualStyleBackColor = false;
+            this.btn_close.Click += new System.EventHandler(this.btn_exit);
+            // 
             // btn_highscore
             // 
             this.btn_highscore.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btn_highscore.Font = new System.Drawing.Font("Indigo Regular", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_highscore.Location = new System.Drawing.Point(72, 166);
+            this.btn_highscore.Location = new System.Drawing.Point(72, 108);
             this.btn_highscore.Name = "btn_highscore";
             this.btn_highscore.Size = new System.Drawing.Size(94, 38);
             this.btn_highscore.TabIndex = 2;
@@ -64,7 +78,7 @@
             // 
             this.btn_start.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btn_start.Font = new System.Drawing.Font("Indigo Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_start.Location = new System.Drawing.Point(72, 101);
+            this.btn_start.Location = new System.Drawing.Point(72, 43);
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(94, 38);
             this.btn_start.TabIndex = 1;
@@ -114,7 +128,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BUKAN (Budi Daya Ikan)";
@@ -133,6 +147,7 @@
         private System.Windows.Forms.Label lbl_menu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_close;
     }
 }
 

@@ -19,7 +19,16 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             InitializeComponent();
         }
-     
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParams = base.CreateParams;
+                handleParams.ExStyle |= 0x02000000;
+                return handleParams;
+            }
+        }
 
         private void Food_Generator(object sender, EventArgs e)
         {

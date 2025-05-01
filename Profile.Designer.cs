@@ -133,6 +133,7 @@
             this.dgv_Profile.Location = new System.Drawing.Point(70, 166);
             this.dgv_Profile.MultiSelect = false;
             this.dgv_Profile.Name = "dgv_Profile";
+            this.dgv_Profile.ReadOnly = true;
             this.dgv_Profile.RightToLeft = System.Windows.Forms.RightToLeft.No;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -186,9 +187,9 @@
             this.Controls.Add(this.btn_newProfile);
             this.Controls.Add(this.btn_start);
             this.Controls.Add(this.lbl_profile);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Profile";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Profile";
             this.Load += new System.EventHandler(this.Profile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Profile)).EndInit();

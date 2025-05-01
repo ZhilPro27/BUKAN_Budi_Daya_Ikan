@@ -116,7 +116,7 @@
             this.Controls.Add(this.btn_add__fish);
             this.Controls.Add(this.lbl_money);
             this.Controls.Add(this.lbl_score);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Game";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
