@@ -18,16 +18,11 @@ namespace BUKAN_Budi_Daya_Ikan_
         public Game()
         {
             InitializeComponent();
-        }
 
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams handleParams = base.CreateParams;
-                handleParams.ExStyle |= 0x02000000;
-                return handleParams;
-            }
+            this.DoubleBuffered = true;
+            this.SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
+            this.UpdateStyles();
+
         }
 
         private void Food_Generator(object sender, EventArgs e)
@@ -80,6 +75,7 @@ namespace BUKAN_Budi_Daya_Ikan_
                     command.Parameters.AddWithValue("@palyerName", core.playerName);
                     command.ExecuteNonQuery();
                     connection.Close();
+                    core.score = 0;
                     this.Close();
                     Form1 form1 = new Form1();
                     form1.ShowDialog();
