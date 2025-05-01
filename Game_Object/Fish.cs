@@ -29,6 +29,9 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
         {
             InitializeComponent();
 
+            this.DoubleBuffered = true;
+            this.UpdateStyles();
+
             fishFramesRight = new List<Image>()
             {
                 Properties.Resources.FishOrange_Right1,
@@ -63,14 +66,6 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-
-            this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
-            this.BackColor = Color.Transparent;
-
-            this.DoubleBuffered = true;
-            this.SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
-            this.UpdateStyles();
-
             // 
             // timer1
             // 
@@ -91,16 +86,17 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(72, 55);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.BackColor = Color.Transparent;
             // 
             // Fish
             // 
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Name = "Fish";
