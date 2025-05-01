@@ -70,6 +70,7 @@
             this.btn_add__fish.TabIndex = 6;
             this.btn_add__fish.Text = "Add Fish";
             this.btn_add__fish.UseVisualStyleBackColor = false;
+            this.btn_add__fish.Click += new System.EventHandler(this.btn_addFish_click);
             // 
             // btn_end
             // 
@@ -98,7 +99,7 @@
             // fish1
             // 
             this.fish1.BackColor = System.Drawing.Color.Transparent;
-            this.fish1.Location = new System.Drawing.Point(365, 140);
+            this.fish1.Location = new System.Drawing.Point(229, 107);
             this.fish1.Name = "fish1";
             this.fish1.Size = new System.Drawing.Size(77, 63);
             this.fish1.TabIndex = 8;
@@ -111,11 +112,11 @@
             this.BackgroundImage = global::BUKAN_Budi_Daya_Ikan_.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(890, 519);
+            this.Controls.Add(this.lbl_score);
+            this.Controls.Add(this.lbl_money);
+            this.Controls.Add(this.btn_add__fish);
             this.Controls.Add(this.fish1);
             this.Controls.Add(this.btn_end);
-            this.Controls.Add(this.btn_add__fish);
-            this.Controls.Add(this.lbl_money);
-            this.Controls.Add(this.lbl_score);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Game";

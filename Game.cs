@@ -29,7 +29,7 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             Random r = new Random();
 
-            int x = r.Next(20, 850);
+            int x = r.Next(50, 850);
             int y = r.Next(50, 400);
             Food f = new Food(x, y);
             Controls.Add(f);
@@ -85,6 +85,19 @@ namespace BUKAN_Budi_Daya_Ikan_
                     MessageBox.Show("Error: " + ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void btn_addFish_click(object sender, EventArgs e)
+        {
+            Random r = new Random();
+            int x = r.Next(50, 850);
+            int y = r.Next(50, 400);
+
+            Fish newFish = new Fish();
+            newFish.Location = new Point(x, y);
+
+            this.Controls.Add(newFish);
+            core.Fishlist.Add(newFish);
         }
     }
 }

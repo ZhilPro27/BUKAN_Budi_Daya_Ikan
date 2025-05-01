@@ -144,8 +144,6 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
                 pt.Y = y;
                 Location = new Point(pt.X, pt.Y);
             }
-
-
         }
 
 
@@ -179,7 +177,6 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
             int randomY = random.Next(0, 500);
             randomTarget = new Point(randomX, randomY);
 
-            // Set interval timer berikutnya secara acak lagi
             randomMoveTimer.Interval = random.Next(3000, 5001);
         }
 
