@@ -73,6 +73,8 @@ namespace BUKAN_Budi_Daya_Ikan_
                     {
                         Controls.Remove(fish);
                         core.Fishlist.Remove(fish);
+
+                        CheckGameOver();
                     }
                 }
             }
@@ -120,5 +122,18 @@ namespace BUKAN_Budi_Daya_Ikan_
             this.Controls.Add(newFish);
             core.Fishlist.Add(newFish);
         }
+
+        private void CheckGameOver()
+        {
+            if (core.Fishlist.Count == 0)
+            {
+                MessageBox.Show("Game Over! Semua ikan telah mati.", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                this.Close();
+                Form1 mainMenu = new Form1();
+                mainMenu.Show();
+            }
+        }
+
     }
 }
