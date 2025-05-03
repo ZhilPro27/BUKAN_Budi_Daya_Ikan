@@ -148,15 +148,12 @@ namespace BUKAN_Budi_Daya_Ikan_
             this.Controls.Add(warning);
             warning.BringToFront();
 
-            // Tampilkan warning selama 3 detik
             await Task.Delay(3000);
 
             // Hapus warning
             warning.StopAnimation();
             this.Controls.Remove(warning);
-            warning.Dispose();
 
-            // Buat enemy di posisi yang sama
             Enemy newEnemy = new Enemy();
             newEnemy.Location = position;
             this.Controls.Add(newEnemy);
