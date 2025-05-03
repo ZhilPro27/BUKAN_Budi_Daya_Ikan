@@ -124,6 +124,12 @@
   <data name="FishOrange_Left6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FishOrange_Left\FishOrange_Left6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WarningSign04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warning\WarningSign04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarningSign02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warning\WarningSign02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="EnemyShark_Left7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enemy\EnemyShark\EnemyShark_Left\EnemyShark_Left7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -132,6 +138,15 @@
   </data>
   <data name="FishOrange_Right7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FishOrange_Right\FishOrange_Right7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarningSign05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warning\WarningSign05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Animated GIF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Animated GIF.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarningSign03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warning\WarningSign03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EnemyShark_Right1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,8 +169,11 @@
   <data name="EnemyShark_Right4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FishOrange_Left7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FishOrange_Left\FishOrange_Left7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EnemyShark_Left8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\EnemyShark\EnemyShark_Left\EnemyShark_Left8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarningSign07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warning\WarningSign07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fish" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,14 +184,17 @@
   <data name="EnemyShark_Right7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WarningSign06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warning\WarningSign06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FishOrange_Left8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FishOrange_Left\FishOrange_Left8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FishOrange_Left7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FishOrange_Left\FishOrange_Left7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="EnemyShark_Right8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="EnemyShark_Left8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Enemy\EnemyShark\EnemyShark_Left\EnemyShark_Left8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EnemyShark_Right6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,14 +205,20 @@
   <data name="FishOrange_Right1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FishOrange_Right\FishOrange_Right1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WarningSign01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warning\WarningSign01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="EnemyShark_Right3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FishOrange_Right5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FishOrange_Right\FishOrange_Right5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FishOrange_Left4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FishOrange_Left\FishOrange_Left4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WarningSign09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warning\WarningSign09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarningSign08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warning\WarningSign08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EnemyShark_Right2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,8 +229,8 @@
   <data name="FishOrange_Right2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FishOrange_Right\FishOrange_Right2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FishOrange_Right8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FishOrange_Right\FishOrange_Right8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FishOrange_Left4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FishOrange_Left\FishOrange_Left4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EnemyShark_Left4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enemy\EnemyShark\EnemyShark_Left\EnemyShark_Left4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,8 +238,8 @@
   <data name="FishOrange_Right4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FishOrange_Right\FishOrange_Right4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Animated GIF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Animated GIF.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FishOrange_Right8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FishOrange_Right\FishOrange_Right8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FishOrange_Left5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FishOrange_Left\FishOrange_Left5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,31 +253,28 @@
   <data name="FishOrange_Left1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FishOrange_Left\FishOrange_Left1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WarningSign01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Warning\WarningSign01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EnemyShark_Hit_Left1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\EnemyShark\EnemyShark_Hit_Left\EnemyShark_Hit_Left1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WarningSign02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Warning\WarningSign02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EnemyShark_Hit_Left2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\EnemyShark\EnemyShark_Hit_Left\EnemyShark_Hit_Left2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WarningSign03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Warning\WarningSign03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EnemyShark_Hit_Left3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\EnemyShark\EnemyShark_Hit_Left\EnemyShark_Hit_Left3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WarningSign04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Warning\WarningSign04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EnemyShark_Hit_Left4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\EnemyShark\EnemyShark_Hit_Left\EnemyShark_Hit_Left4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WarningSign05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Warning\WarningSign05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EnemyShark_Hit_Right1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\EnemyShark\EnemyShark_Hit_Right\EnemyShark_Hit_Right1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WarningSign06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Warning\WarningSign06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EnemyShark_Hit_Right2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\EnemyShark\EnemyShark_Hit_Right\EnemyShark_Hit_Right2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WarningSign07" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Warning\WarningSign07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EnemyShark_Hit_Right3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\EnemyShark\EnemyShark_Hit_Right\EnemyShark_Hit_Right3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WarningSign08" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Warning\WarningSign08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="WarningSign09" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Warning\WarningSign09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EnemyShark_Hit_Right4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\EnemyShark\EnemyShark_Hit_Right\EnemyShark_Hit_Right4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

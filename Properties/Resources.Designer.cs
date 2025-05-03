@@ -83,6 +83,86 @@ namespace BUKAN_Budi_Daya_Ikan_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EnemyShark_Hit_Left1 {
+            get {
+                object obj = ResourceManager.GetObject("EnemyShark_Hit_Left1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EnemyShark_Hit_Left2 {
+            get {
+                object obj = ResourceManager.GetObject("EnemyShark_Hit_Left2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EnemyShark_Hit_Left3 {
+            get {
+                object obj = ResourceManager.GetObject("EnemyShark_Hit_Left3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EnemyShark_Hit_Left4 {
+            get {
+                object obj = ResourceManager.GetObject("EnemyShark_Hit_Left4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EnemyShark_Hit_Right1 {
+            get {
+                object obj = ResourceManager.GetObject("EnemyShark_Hit_Right1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EnemyShark_Hit_Right2 {
+            get {
+                object obj = ResourceManager.GetObject("EnemyShark_Hit_Right2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EnemyShark_Hit_Right3 {
+            get {
+                object obj = ResourceManager.GetObject("EnemyShark_Hit_Right3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EnemyShark_Hit_Right4 {
+            get {
+                object obj = ResourceManager.GetObject("EnemyShark_Hit_Right4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EnemyShark_Left1 {
             get {
                 object obj = ResourceManager.GetObject("EnemyShark_Left1", resourceCulture);

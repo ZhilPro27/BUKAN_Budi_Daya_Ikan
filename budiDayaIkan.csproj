@@ -245,7 +245,9 @@
   <ItemGroup>
     <None Include="Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right8.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Hit_Left\EnemyShark_Hit_Left1.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Warning\WarningSign01.png" />
   </ItemGroup>
@@ -272,6 +274,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Warning\WarningSign09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Hit_Left\EnemyShark_Hit_Left2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Hit_Left\EnemyShark_Hit_Left3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Hit_Left\EnemyShark_Hit_Left4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Hit_Right\EnemyShark_Hit_Right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Hit_Right\EnemyShark_Hit_Right2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Hit_Right\EnemyShark_Hit_Right3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\EnemyShark\EnemyShark_Hit_Right\EnemyShark_Hit_Right4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
