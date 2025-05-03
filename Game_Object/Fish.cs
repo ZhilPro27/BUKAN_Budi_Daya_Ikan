@@ -12,7 +12,7 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
     public class Fish : UserControl
     {
         private PictureBox pictureBox1;
-        private Timer timer1;
+        private Timer timerUpdate;
         private System.ComponentModel.IContainer components;
         private int speed = 4;
         private Random random = new Random();
@@ -59,18 +59,18 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timerUpdate = new System.Windows.Forms.Timer(this.components);
             this.randomMoveTimer = new System.Windows.Forms.Timer(this.components);
             this.animationTimer = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // timer1
+            // timerUpdate
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 33;
-            this.timer1.Tick += new System.EventHandler(this.Update);
+            this.timerUpdate.Enabled = true;
+            this.timerUpdate.Interval = 33;
+            this.timerUpdate.Tick += new System.EventHandler(this.Update);
             // 
             // randomMoveTimer
             // 

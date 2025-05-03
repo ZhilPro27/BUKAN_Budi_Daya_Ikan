@@ -73,6 +73,9 @@
     <Compile Include="Game_Object\Enemy.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Game_Object\Warning.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Highscore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Game_Object\Enemy.resx">
       <DependentUpon>Enemy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game_Object\Warning.resx">
+      <DependentUpon>Warning.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Highscore.resx">
       <DependentUpon>Highscore.cs</DependentUpon>
@@ -238,6 +244,34 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Enemy\EnemyShark\EnemyShark_Right\EnemyShark_Right8.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Warning\WarningSign01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning\WarningSign02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning\WarningSign03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning\WarningSign04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning\WarningSign05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning\WarningSign06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning\WarningSign07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning\WarningSign08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning\WarningSign09.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

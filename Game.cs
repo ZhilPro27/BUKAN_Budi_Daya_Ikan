@@ -39,11 +39,9 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             int x = core.random.Next(50, 850);
             int y = core.random.Next(50, 400);
-            Enemy enemy = new Enemy();
-            enemy.Location = new Point(x, y);
+            Point spawnPos = new Point(x, y);
 
-            Controls.Add(enemy);
-            core.Enemylist.Add(enemy);
+            ShowWarningAndSpawnEnemy(spawnPos);
         }
 
         private void Update(object sender, EventArgs e)
@@ -141,6 +139,28 @@ namespace BUKAN_Budi_Daya_Ikan_
                 Form1 mainMenu = new Form1();
                 mainMenu.Show();
             }
+        }
+
+        private async void ShowWarningAndSpawnEnemy(Point position)
+        {
+            Warning warning = new Warning();
+            warning.Location = position;
+            this.Controls.Add(warning);
+            warning.BringToFront();
+
+            // Tampilkan warning selama 3 detik
+            await Task.Delay(3000);
+
+            // Hapus warning
+            warning.StopAnimation();
+            this.Controls.Remove(warning);
+            warning.Dispose();
+
+            // Buat enemy di posisi yang sama
+            Enemy newEnemy = new Enemy();
+            newEnemy.Location = position;
+            this.Controls.Add(newEnemy);
+            core.Enemylist.Add(newEnemy);
         }
 
     }
