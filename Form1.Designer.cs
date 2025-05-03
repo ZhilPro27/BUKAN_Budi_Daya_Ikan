@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menu = new System.Windows.Forms.Panel();
             this.btn_close = new System.Windows.Forms.Button();
             this.btn_highscore = new System.Windows.Forms.Button();
@@ -35,7 +36,9 @@
             this.lbl_menu = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.wmd_Backsound = new AxWMPLib.AxWindowsMediaPlayer();
             this.menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.wmd_Backsound)).BeginInit();
             this.SuspendLayout();
             // 
             // menu
@@ -118,6 +121,16 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Budi Daya Ikan";
             // 
+            // wmd_Backsound
+            // 
+            this.wmd_Backsound.Enabled = true;
+            this.wmd_Backsound.Location = new System.Drawing.Point(268, 78);
+            this.wmd_Backsound.Name = "wmd_Backsound";
+            this.wmd_Backsound.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmd_Backsound.OcxState")));
+            this.wmd_Backsound.Size = new System.Drawing.Size(75, 23);
+            this.wmd_Backsound.TabIndex = 5;
+            this.wmd_Backsound.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,6 +138,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::BUKAN_Budi_Daya_Ikan_.Properties.Resources.Animated_GIF;
             this.ClientSize = new System.Drawing.Size(384, 411);
+            this.Controls.Add(this.wmd_Backsound);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menu);
@@ -134,6 +148,7 @@
             this.Text = "BUKAN (Budi Daya Ikan)";
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.wmd_Backsound)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,6 +163,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_close;
+        private AxWMPLib.AxWindowsMediaPlayer wmd_Backsound;
     }
 }
 
