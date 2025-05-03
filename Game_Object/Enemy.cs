@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace BUKAN_Budi_Daya_Ikan_.Game_Object
 {
@@ -189,20 +190,19 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
         private void RegisterHit()
         {
             hitCount++;
+
+            SoundPlayer hitSound = new SoundPlayer();
+            hitSound.SoundLocation = @"D:\\Kuliah\\Semester 4\\Pengembangan Aplikasi Basis Data\\BUKAN(Budi Daya Ikan)\\Resources\\Audio\\Hit\\Hit.wav";
+            hitSound.Play();
+
             if (hitCount >= maxHits)
             {
-                // Enemy mati, hapus dari parent control dan core list
                 if (this.Parent != null)
                 {
                     this.Parent.Controls.Remove(this);
                 }
                 core.Enemylist.Remove(this);
                 core.AddMoney();
-                // Bisa tambahkan efek kematian atau suara di sini
-            }
-            else
-            {
-                // Bisa tambahkan efek klik, misal flash atau animasi kecil
             }
         }
 
