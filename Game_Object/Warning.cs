@@ -73,6 +73,7 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
             // WarningAnimation
             // 
             this.WarningAnimation.Enabled = true;
+            this.WarningAnimation.Interval = 50;
             this.WarningAnimation.Tick += new System.EventHandler(this.WarningAnimation_Tick);
             // 
             // Warning

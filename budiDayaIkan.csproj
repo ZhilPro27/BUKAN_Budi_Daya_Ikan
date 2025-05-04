@@ -299,6 +299,7 @@
   <ItemGroup>
     <Content Include="Resources\Audio\Backsound\Backsound.mp3" />
     <Content Include="Resources\Audio\Hit\Hit.wav" />
+    <Content Include="Resources\Audio\Warning\Warning.wav" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxWMPLib">
