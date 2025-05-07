@@ -62,6 +62,7 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
             // imgWarning
             // 
             this.imgWarning.BackColor = System.Drawing.Color.Transparent;
+            this.imgWarning.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.imgWarning.Image = global::BUKAN_Budi_Daya_Ikan_.Properties.Resources.WarningSign06;
             this.imgWarning.Location = new System.Drawing.Point(0, 0);
             this.imgWarning.Name = "imgWarning";
@@ -79,6 +80,7 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
             // Warning
             // 
             this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Controls.Add(this.imgWarning);
             this.Name = "Warning";
             this.Size = new System.Drawing.Size(45, 45);

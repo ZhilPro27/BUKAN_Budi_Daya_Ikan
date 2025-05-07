@@ -86,6 +86,7 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(72, 55);
@@ -96,6 +97,7 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
             // Fish
             // 
             this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Name = "Fish";
