@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Media;
 using BUKAN_Budi_Daya_Ikan_.Game_Object;
+using System.IO;
 
 namespace BUKAN_Budi_Daya_Ikan_
 {
@@ -145,7 +146,7 @@ namespace BUKAN_Budi_Daya_Ikan_
         private async void ShowWarningAndSpawnEnemy(Point position)
         {
             SoundPlayer warningSound = new SoundPlayer();
-            warningSound.SoundLocation = @"D:\Kuliah\Semester 4\Pengembangan Aplikasi Basis Data\BUKAN(Budi Daya Ikan)\Resources\Audio\Warning\Warning.wav";
+            warningSound.Stream = new MemoryStream(Properties.Resources.Warning);
             warningSound.Play();
             Warning warning = new Warning();
             warning.Location = position;

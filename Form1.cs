@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.IO;
 
 namespace BUKAN_Budi_Daya_Ikan_
 {
-    public partial class Form1: Form
+    public partial class Form1 : Form
     {
         public static WMPLib.WindowsMediaPlayer Backsound = new WMPLib.WindowsMediaPlayer();
         public Form1()
@@ -20,7 +21,9 @@ namespace BUKAN_Budi_Daya_Ikan_
             this.UpdateStyles();
 
             InitializeComponent();
-            Backsound.URL = @"D:\Kuliah\Semester 4\Pengembangan Aplikasi Basis Data\BUKAN(Budi Daya Ikan)\Resources\Audio\Backsound\Backsound.mp3";
+            string backsoundPath = Path.GetTempFileName();
+            File.WriteAllBytes(backsoundPath, Properties.Resources.Backsound);
+            Backsound.URL = backsoundPath;
             Backsound.controls.play();
             Backsound.settings.setMode("loop", true);
         }

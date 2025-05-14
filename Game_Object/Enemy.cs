@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.IO;
 
 namespace BUKAN_Budi_Daya_Ikan_.Game_Object
 {
@@ -192,7 +193,8 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
             hitCount++;
 
             SoundPlayer hitSound = new SoundPlayer();
-            hitSound.SoundLocation = @"D:\\Kuliah\\Semester 4\\Pengembangan Aplikasi Basis Data\\BUKAN(Budi Daya Ikan)\\Resources\\Audio\\Hit\\Hit.wav";
+            var stream = new MemoryStream(Properties.Resources.Hit);
+            hitSound.Stream = stream;
             hitSound.Play();
 
             if (hitCount >= maxHits)
