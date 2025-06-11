@@ -423,6 +423,7 @@
     <Content Include="Resources\Audio\Backsound\Backsound.mp3" />
     <Content Include="Resources\Audio\Hit\Hit.wav" />
     <Content Include="Resources\Audio\Warning\Warning.wav" />
+    <None Include="Resources\fish_2371907.png" />
     <None Include="Resources\website_16442090.png" />
     <None Include="Resources\gear_17451476.png" />
   </ItemGroup>

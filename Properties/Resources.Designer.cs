@@ -343,6 +343,16 @@ namespace BUKAN_Budi_Daya_Ikan_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fish_2371907 {
+            get {
+                object obj = ResourceManager.GetObject("fish_2371907", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FishOrange_Left1 {
             get {
                 object obj = ResourceManager.GetObject("FishOrange_Left1", resourceCulture);

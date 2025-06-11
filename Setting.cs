@@ -30,5 +30,10 @@ namespace BUKAN_Budi_Daya_Ikan_.Resources
             form1.Show();
             this.Close();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
