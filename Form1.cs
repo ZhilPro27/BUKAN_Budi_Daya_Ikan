@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.IO;
+using BUKAN_Budi_Daya_Ikan_.Resources;
 
 namespace BUKAN_Budi_Daya_Ikan_
 {
@@ -45,6 +46,13 @@ namespace BUKAN_Budi_Daya_Ikan_
         private void btn_exit(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Setting setting = new Setting();
+            setting.Show();
+            this.Hide();
         }
     }
 }

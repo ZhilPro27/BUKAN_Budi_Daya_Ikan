@@ -511,6 +511,16 @@ namespace BUKAN_Budi_Daya_Ikan_.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gear_17451476 {
+            get {
+                object obj = ResourceManager.GetObject("gear_17451476", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] Hit {
@@ -616,6 +626,16 @@ namespace BUKAN_Budi_Daya_Ikan_.Properties {
         internal static System.Drawing.Bitmap WarningSign09 {
             get {
                 object obj = ResourceManager.GetObject("WarningSign09", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap website_16442090 {
+            get {
+                object obj = ResourceManager.GetObject("website_16442090", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
