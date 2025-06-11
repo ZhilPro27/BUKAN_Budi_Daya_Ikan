@@ -14,7 +14,7 @@ namespace BUKAN_Budi_Daya_Ikan_
 {
     public partial class Profile : Form
     {
-        private string connectionString = "Data Source=DESKTOP-FP1P0A6\\ZHILALKRISNA;Initial Catalog=BUKAN_db;Integrated Security=True";
+        private string connectionString = "Data Source=DESKTOP-P6SA9AD;Initial Catalog=BUKAN_db;Integrated Security=True";
         public Profile()
         {
             InitializeComponent();
