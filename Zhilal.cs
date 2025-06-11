@@ -11,12 +11,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.Caching;
 
 namespace BUKAN_Budi_Daya_Ikan_
 {
     public partial class Zhilal : Form
     {
         private string connectionString = "Data Source=DESKTOP-FP1P0A6\\ZHILALKRISNA;Initial Catalog=BUKAN_db;Integrated Security=True";
+        private readonly MemoryCache _cache = MemoryCache.Default;
+        private readonly string _cacheKey = "GameLogData"; 
+        private CacheItemPolicy GetCachePolicy()
+        {
+            return new CacheItemPolicy
+            {
+                AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(5)
+            };
+        }
 
         public Zhilal()
         {
@@ -25,24 +35,39 @@ namespace BUKAN_Budi_Daya_Ikan_
 
         private void loadData()
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            DataTable dt;
+            if (_cache.Contains(_cacheKey))
             {
+                dt = _cache.Get(_cacheKey) as DataTable;
+            }
+            else
+            {
+                dt = new DataTable();
                 try
                 {
-                    connection.Open();
-                    string query = "SELECT * FROM GameLog";
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
-                    dgv_GameLog.DataSource = dataTable;
+                    using (var conn = new SqlConnection(connectionString))
+                    {
+                        var query = "SELECT * FROM GameLog ORDER BY GameStartTime DESC";
+                        var da = new SqlDataAdapter(query, conn);
+                        da.Fill(dt);
+                    }
 
-                    clearTextBox();
-                    connection.Close();
+                    _cache.Add(_cacheKey, dt, GetCachePolicy());
                 }
                 catch (Exception ex)
                 {
-                    lbl_Error.Text = ex.Message;
+                    lbl_Error.Text = "Gagal memuat data dari database: " + ex.Message;
                 }
+            }
+            dgv_GameLog.DataSource = dt;
+            clearTextBox();
+        }
+
+        private void InvalidateCache()
+        {
+            if (_cache.Contains(_cacheKey))
+            {
+                _cache.Remove(_cacheKey);
             }
         }
 
@@ -91,6 +116,7 @@ namespace BUKAN_Budi_Daya_Ikan_
                     transaction.Commit();
 
                     lbl_Error.Text="Data log berhasil di-update!";
+                    InvalidateCache();
                     loadData();
                 }
                 catch (Exception ex)
@@ -167,6 +193,7 @@ namespace BUKAN_Budi_Daya_Ikan_
                     transaction.Commit();
 
                     lbl_Error.Text = "Data log berhasil dihapus!";
+                    InvalidateCache();
                     loadData();
                 }
                 catch (Exception ex)

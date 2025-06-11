@@ -37,8 +37,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.wmd_Backsound = new AxWMPLib.AxWindowsMediaPlayer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmd_Backsound)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menu
@@ -131,6 +133,18 @@
             this.wmd_Backsound.TabIndex = 5;
             this.wmd_Backsound.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::BUKAN_Budi_Daya_Ikan_.Properties.Resources.gear_17451476;
+            this.pictureBox1.Location = new System.Drawing.Point(336, 365);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 34);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,6 +152,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::BUKAN_Budi_Daya_Ikan_.Properties.Resources.Animated_GIF;
             this.ClientSize = new System.Drawing.Size(384, 411);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.wmd_Backsound);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -149,6 +164,7 @@
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmd_Backsound)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,6 +180,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_close;
         private AxWMPLib.AxWindowsMediaPlayer wmd_Backsound;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

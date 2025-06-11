@@ -16,7 +16,7 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Zhilal());
+            Application.Run(new Form1());
         }
     }
 }

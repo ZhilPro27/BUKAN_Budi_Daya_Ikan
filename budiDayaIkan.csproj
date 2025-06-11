@@ -146,6 +146,7 @@
     <Compile Include="Game_Object\Enemy.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Game_Object\GameLog.cs" />
     <Compile Include="Game_Object\Warning.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,6 +175,12 @@
     </Compile>
     <Compile Include="ReportViewerZhilal.Designer.cs">
       <DependentUpon>ReportViewerZhilal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
     </Compile>
     <Compile Include="Zhilal.cs">
       <SubType>Form</SubType>
@@ -222,6 +229,9 @@
       <DependentUpon>ReportViewerZhilal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportZhilal.rdlc" />
+    <EmbeddedResource Include="Resources\Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Zhilal.resx">
       <DependentUpon>Zhilal.cs</DependentUpon>
     </EmbeddedResource>
@@ -413,6 +423,8 @@
     <Content Include="Resources\Audio\Backsound\Backsound.mp3" />
     <Content Include="Resources\Audio\Hit\Hit.wav" />
     <Content Include="Resources\Audio\Warning\Warning.wav" />
+    <None Include="Resources\website_16442090.png" />
+    <None Include="Resources\gear_17451476.png" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxWMPLib">
