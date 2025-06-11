@@ -33,7 +33,9 @@ namespace BUKAN_Budi_Daya_Ikan_.Resources
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            FormPembelianIkan formPembelianIkan = new FormPembelianIkan();
+            formPembelianIkan.Show();
+            this.Close();
         }
     }
 }

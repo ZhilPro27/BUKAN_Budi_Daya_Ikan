@@ -119,6 +119,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FishDataType.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FishDataType.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetZhilal.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -129,6 +134,18 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPembelianIkan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPembelianIkan.Designer.cs">
+      <DependentUpon>FormPembelianIkan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportFish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportFish.Designer.cs">
+      <DependentUpon>FormReportFish.cs</DependentUpon>
     </Compile>
     <Compile Include="Game_Object\core.cs" />
     <Compile Include="Game_Object\Food.cs">
@@ -162,6 +179,12 @@
     <Compile Include="PreviewImportZhilal.Designer.cs">
       <DependentUpon>PreviewImportZhilal.cs</DependentUpon>
     </Compile>
+    <Compile Include="PreviewPembelianIkan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreviewPembelianIkan.Designer.cs">
+      <DependentUpon>PreviewPembelianIkan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,10 +199,10 @@
     <Compile Include="ReportViewerZhilal.Designer.cs">
       <DependentUpon>ReportViewerZhilal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Setting.cs">
+    <Compile Include="Setting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Resources\Setting.Designer.cs">
+    <Compile Include="Setting.Designer.cs">
       <DependentUpon>Setting.cs</DependentUpon>
     </Compile>
     <Compile Include="Zhilal.cs">
@@ -188,8 +211,15 @@
     <Compile Include="Zhilal.Designer.cs">
       <DependentUpon>Zhilal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FishReport.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPembelianIkan.resx">
+      <DependentUpon>FormPembelianIkan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportFish.resx">
+      <DependentUpon>FormReportFish.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Game_Object\Food.resx">
       <DependentUpon>Food.cs</DependentUpon>
@@ -229,12 +259,23 @@
       <DependentUpon>ReportViewerZhilal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportZhilal.rdlc" />
-    <EmbeddedResource Include="Resources\Setting.resx">
+    <EmbeddedResource Include="Setting.resx">
       <DependentUpon>Setting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Zhilal.resx">
       <DependentUpon>Zhilal.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="FishDataType.xsc">
+      <DependentUpon>FishDataType.xsd</DependentUpon>
+    </None>
+    <None Include="FishDataType.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FishDataType.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FishDataType.xss">
+      <DependentUpon>FishDataType.xsd</DependentUpon>
+    </None>
     <None Include="DataSetZhilal.xsc">
       <DependentUpon>DataSetZhilal.xsd</DependentUpon>
     </None>
