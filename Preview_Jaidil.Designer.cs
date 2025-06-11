@@ -1,6 +1,6 @@
 ﻿namespace BUKAN_Budi_Daya_Ikan_
 {
-    partial class PreviewData
+    partial class Preview_Jaidil
     {
         /// <summary>
         /// Required designer variable.
@@ -36,32 +36,33 @@
             // dgvPreview
             // 
             this.dgvPreview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPreview.Location = new System.Drawing.Point(228, 40);
+            this.dgvPreview.Location = new System.Drawing.Point(45, 38);
             this.dgvPreview.Name = "dgvPreview";
             this.dgvPreview.RowHeadersWidth = 51;
             this.dgvPreview.RowTemplate.Height = 24;
-            this.dgvPreview.Size = new System.Drawing.Size(331, 331);
+            this.dgvPreview.Size = new System.Drawing.Size(708, 319);
             this.dgvPreview.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(692, 401);
+            this.button1.Location = new System.Drawing.Point(678, 388);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.btnOK_Click);
             // 
-            // PreviewData
+            // Preview_Jaidil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvPreview);
-            this.Name = "PreviewData";
-            this.Text = "PreviewData";
+            this.Name = "Preview_Jaidil";
+            this.Text = "Preview_Jaidil";
+            this.Load += new System.EventHandler(this.Preview_Jaidil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPreview)).EndInit();
             this.ResumeLayout(false);
 
