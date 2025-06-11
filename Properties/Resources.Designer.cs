@@ -93,6 +93,16 @@ namespace BUKAN_Budi_Daya_Ikan_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap big_fish_1594938 {
+            get {
+                object obj = ResourceManager.GetObject("big-fish_1594938", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EnemyShark_Hit_Left1 {
             get {
                 object obj = ResourceManager.GetObject("EnemyShark_Hit_Left1", resourceCulture);
@@ -537,6 +547,16 @@ namespace BUKAN_Budi_Daya_Ikan_.Properties {
             get {
                 object obj = ResourceManager.GetObject("Hit", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap score_334345 {
+            get {
+                object obj = ResourceManager.GetObject("score_334345", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

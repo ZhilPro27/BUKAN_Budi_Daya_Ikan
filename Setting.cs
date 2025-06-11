@@ -37,5 +37,19 @@ namespace BUKAN_Budi_Daya_Ikan_.Resources
             formPembelianIkan.Show();
             this.Close();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Jaidil j = new Jaidil();
+            j.Show();
+            this.Close();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Dimas dimas = new Dimas();
+            dimas.Show();
+            this.Close();
+        }
     }
 }

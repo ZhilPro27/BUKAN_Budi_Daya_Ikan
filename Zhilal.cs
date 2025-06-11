@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.Caching;
+using BUKAN_Budi_Daya_Ikan_.Resources;
 
 namespace BUKAN_Budi_Daya_Ikan_
 {
@@ -362,6 +363,13 @@ namespace BUKAN_Budi_Daya_Ikan_
             ReportViewerZhilal reportViewer = new ReportViewerZhilal();
             reportViewer.Show();
             this.Hide();
+        }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            Setting setting = new Setting();
+            setting.Show();
+            this.Close();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using NPOI.SS.UserModel;
+﻿using BUKAN_Budi_Daya_Ikan_.Resources;
+using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 using System;
 using System.Data;
@@ -337,6 +338,13 @@ namespace BUKAN_Budi_Daya_Ikan_
             {
                 MessageBox.Show("Terjadi kesalahan saat mencoba mengekspor data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            Setting setting = new Setting();
+            setting.Show();
+            this.Close();
         }
     }
 }

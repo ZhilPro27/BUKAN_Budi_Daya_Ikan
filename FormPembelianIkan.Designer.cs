@@ -42,6 +42,7 @@ namespace BUKAN_Budi_Daya_Ikan_
             this.labelSpeed = new System.Windows.Forms.Label();
             this.labelAnimationPrefix = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btn_Back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFishTypes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,28 +50,28 @@ namespace BUKAN_Budi_Daya_Ikan_
             // 
             this.txtTypeName.Location = new System.Drawing.Point(144, 60);
             this.txtTypeName.Name = "txtTypeName";
-            this.txtTypeName.Size = new System.Drawing.Size(176, 26);
+            this.txtTypeName.Size = new System.Drawing.Size(176, 20);
             this.txtTypeName.TabIndex = 1;
             // 
             // txtCost
             // 
             this.txtCost.Location = new System.Drawing.Point(144, 100);
             this.txtCost.Name = "txtCost";
-            this.txtCost.Size = new System.Drawing.Size(176, 26);
+            this.txtCost.Size = new System.Drawing.Size(176, 20);
             this.txtCost.TabIndex = 2;
             // 
             // txtSpeed
             // 
             this.txtSpeed.Location = new System.Drawing.Point(144, 140);
             this.txtSpeed.Name = "txtSpeed";
-            this.txtSpeed.Size = new System.Drawing.Size(176, 26);
+            this.txtSpeed.Size = new System.Drawing.Size(176, 20);
             this.txtSpeed.TabIndex = 3;
             // 
             // txtAnimationPrefix
             // 
             this.txtAnimationPrefix.Location = new System.Drawing.Point(144, 177);
             this.txtAnimationPrefix.Name = "txtAnimationPrefix";
-            this.txtAnimationPrefix.Size = new System.Drawing.Size(176, 26);
+            this.txtAnimationPrefix.Size = new System.Drawing.Size(176, 20);
             this.txtAnimationPrefix.TabIndex = 4;
             // 
             // dgvFishTypes
@@ -107,7 +108,7 @@ namespace BUKAN_Budi_Daya_Ikan_
             // 
             // BtnHapus
             // 
-            this.BtnHapus.Location = new System.Drawing.Point(14, 317);
+            this.BtnHapus.Location = new System.Drawing.Point(14, 285);
             this.BtnHapus.Name = "BtnHapus";
             this.BtnHapus.Size = new System.Drawing.Size(100, 30);
             this.BtnHapus.TabIndex = 8;
@@ -117,7 +118,7 @@ namespace BUKAN_Budi_Daya_Ikan_
             // 
             // BtnRefresh
             // 
-            this.BtnRefresh.Location = new System.Drawing.Point(144, 317);
+            this.BtnRefresh.Location = new System.Drawing.Point(144, 285);
             this.BtnRefresh.Name = "BtnRefresh";
             this.BtnRefresh.Size = new System.Drawing.Size(100, 30);
             this.BtnRefresh.TabIndex = 9;
@@ -127,7 +128,7 @@ namespace BUKAN_Budi_Daya_Ikan_
             // 
             // BtnImport
             // 
-            this.BtnImport.Location = new System.Drawing.Point(12, 365);
+            this.BtnImport.Location = new System.Drawing.Point(12, 333);
             this.BtnImport.Name = "BtnImport";
             this.BtnImport.Size = new System.Drawing.Size(313, 36);
             this.BtnImport.TabIndex = 10;
@@ -137,7 +138,7 @@ namespace BUKAN_Budi_Daya_Ikan_
             // 
             // BtnAnalyze
             // 
-            this.BtnAnalyze.Location = new System.Drawing.Point(14, 449);
+            this.BtnAnalyze.Location = new System.Drawing.Point(14, 417);
             this.BtnAnalyze.Name = "BtnAnalyze";
             this.BtnAnalyze.Size = new System.Drawing.Size(311, 39);
             this.BtnAnalyze.TabIndex = 11;
@@ -150,7 +151,7 @@ namespace BUKAN_Budi_Daya_Ikan_
             this.labelTypeName.AutoSize = true;
             this.labelTypeName.Location = new System.Drawing.Point(20, 63);
             this.labelTypeName.Name = "labelTypeName";
-            this.labelTypeName.Size = new System.Drawing.Size(89, 20);
+            this.labelTypeName.Size = new System.Drawing.Size(62, 13);
             this.labelTypeName.TabIndex = 13;
             this.labelTypeName.Text = "TypeName:";
             // 
@@ -159,7 +160,7 @@ namespace BUKAN_Budi_Daya_Ikan_
             this.labelCost.AutoSize = true;
             this.labelCost.Location = new System.Drawing.Point(20, 103);
             this.labelCost.Name = "labelCost";
-            this.labelCost.Size = new System.Drawing.Size(46, 20);
+            this.labelCost.Size = new System.Drawing.Size(31, 13);
             this.labelCost.TabIndex = 14;
             this.labelCost.Text = "Cost:";
             // 
@@ -168,7 +169,7 @@ namespace BUKAN_Budi_Daya_Ikan_
             this.labelSpeed.AutoSize = true;
             this.labelSpeed.Location = new System.Drawing.Point(20, 143);
             this.labelSpeed.Name = "labelSpeed";
-            this.labelSpeed.Size = new System.Drawing.Size(60, 20);
+            this.labelSpeed.Size = new System.Drawing.Size(41, 13);
             this.labelSpeed.TabIndex = 15;
             this.labelSpeed.Text = "Speed:";
             // 
@@ -177,23 +178,34 @@ namespace BUKAN_Budi_Daya_Ikan_
             this.labelAnimationPrefix.AutoSize = true;
             this.labelAnimationPrefix.Location = new System.Drawing.Point(20, 183);
             this.labelAnimationPrefix.Name = "labelAnimationPrefix";
-            this.labelAnimationPrefix.Size = new System.Drawing.Size(127, 20);
+            this.labelAnimationPrefix.Size = new System.Drawing.Size(85, 13);
             this.labelAnimationPrefix.TabIndex = 16;
             this.labelAnimationPrefix.Text = "Animation Prefix:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(14, 407);
-            this.button1.Name = "BtnExport";
+            this.button1.Location = new System.Drawing.Point(14, 375);
+            this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(311, 36);
             this.button1.TabIndex = 17;
             this.button1.Text = "Export & Report";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnExport_Click);
             // 
+            // btn_Back
+            // 
+            this.btn_Back.Location = new System.Drawing.Point(14, 462);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(100, 30);
+            this.btn_Back.TabIndex = 18;
+            this.btn_Back.Text = "Back";
+            this.btn_Back.UseVisualStyleBackColor = true;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
+            // 
             // FormPembelianIkan
             // 
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelAnimationPrefix);
             this.Controls.Add(this.labelSpeed);
@@ -236,5 +248,6 @@ namespace BUKAN_Budi_Daya_Ikan_
         private System.Windows.Forms.Label labelSpeed;
         private System.Windows.Forms.Label labelAnimationPrefix;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Back;
     }
 }

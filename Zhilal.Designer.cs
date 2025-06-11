@@ -47,6 +47,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_ErrrorMessage = new System.Windows.Forms.Label();
             this.lbl_Error = new System.Windows.Forms.Label();
+            this.btn_Back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GameLog)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -57,7 +58,7 @@
             this.dgv_GameLog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_GameLog.Location = new System.Drawing.Point(12, 12);
             this.dgv_GameLog.Name = "dgv_GameLog";
-            this.dgv_GameLog.Size = new System.Drawing.Size(592, 426);
+            this.dgv_GameLog.Size = new System.Drawing.Size(592, 403);
             this.dgv_GameLog.TabIndex = 0;
             this.dgv_GameLog.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_GameLog_CellClick);
             // 
@@ -216,7 +217,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.lbl_ErrrorMessage, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lbl_Error, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(614, 353);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(614, 330);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.88235F));
@@ -237,16 +238,27 @@
             // 
             this.lbl_Error.AutoSize = true;
             this.lbl_Error.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Error.Location = new System.Drawing.Point(3, 22);
+            this.lbl_Error.Location = new System.Drawing.Point(3, 21);
             this.lbl_Error.Name = "lbl_Error";
             this.lbl_Error.Size = new System.Drawing.Size(0, 13);
             this.lbl_Error.TabIndex = 1;
+            // 
+            // btn_Back
+            // 
+            this.btn_Back.Location = new System.Drawing.Point(12, 421);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(118, 23);
+            this.btn_Back.TabIndex = 21;
+            this.btn_Back.Text = "Back";
+            this.btn_Back.UseVisualStyleBackColor = true;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // Zhilal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 450);
+            this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.btn_export);
             this.Controls.Add(this.btn_import);
@@ -289,5 +301,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label lbl_ErrrorMessage;
         private System.Windows.Forms.Label lbl_Error;
+        private System.Windows.Forms.Button btn_Back;
     }
 }

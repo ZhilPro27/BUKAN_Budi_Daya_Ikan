@@ -119,6 +119,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataDimas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataDimas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Jaidil.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Jaidil.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dimas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dimas.Designer.cs">
+      <DependentUpon>Dimas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FishDataType.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -173,6 +189,24 @@
     <Compile Include="Highscore.Designer.cs">
       <DependentUpon>Highscore.cs</DependentUpon>
     </Compile>
+    <Compile Include="Jaidil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jaidil.Designer.cs">
+      <DependentUpon>Jaidil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreviewData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreviewData.Designer.cs">
+      <DependentUpon>PreviewData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreviewDimas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreviewDimas.Designer.cs">
+      <DependentUpon>PreviewDimas.cs</DependentUpon>
+    </Compile>
     <Compile Include="PreviewImportZhilal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +219,12 @@
     <Compile Include="PreviewPembelianIkan.Designer.cs">
       <DependentUpon>PreviewPembelianIkan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Preview_Jaidil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview_Jaidil.Designer.cs">
+      <DependentUpon>Preview_Jaidil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,11 +233,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportDimas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportDimas.Designer.cs">
+      <DependentUpon>ReportDimas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportViewerZhilal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ReportViewerZhilal.Designer.cs">
       <DependentUpon>ReportViewerZhilal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Jaidil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Jaidil.Designer.cs">
+      <DependentUpon>Report_Jaidil.cs</DependentUpon>
     </Compile>
     <Compile Include="Setting.cs">
       <SubType>Form</SubType>
@@ -211,6 +263,9 @@
     <Compile Include="Zhilal.Designer.cs">
       <DependentUpon>Zhilal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dimas.resx">
+      <DependentUpon>Dimas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FishReport.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -239,8 +294,17 @@
     <EmbeddedResource Include="Highscore.resx">
       <DependentUpon>Highscore.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Jaidil.resx">
+      <DependentUpon>Jaidil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviewDimas.resx">
+      <DependentUpon>PreviewDimas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PreviewImportZhilal.resx">
       <DependentUpon>PreviewImportZhilal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview_Jaidil.resx">
+      <DependentUpon>Preview_Jaidil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
@@ -255,16 +319,45 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportDimas.resx">
+      <DependentUpon>ReportDimas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportViewerZhilal.resx">
       <DependentUpon>ReportViewerZhilal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportZhilal.rdlc" />
+    <EmbeddedResource Include="Report_Jaidil.rdlc" />
+    <EmbeddedResource Include="Report_Jaidil.resx">
+      <DependentUpon>Report_Jaidil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Setting.resx">
       <DependentUpon>Setting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Zhilal.resx">
       <DependentUpon>Zhilal.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataDimas.xsc">
+      <DependentUpon>DataDimas.xsd</DependentUpon>
+    </None>
+    <None Include="DataDimas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataDimas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataDimas.xss">
+      <DependentUpon>DataDimas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Jaidil.xsc">
+      <DependentUpon>DataSet_Jaidil.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Jaidil.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Jaidil.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet_Jaidil.xss">
+      <DependentUpon>DataSet_Jaidil.xsd</DependentUpon>
+    </None>
     <None Include="FishDataType.xsc">
       <DependentUpon>FishDataType.xsd</DependentUpon>
     </None>
@@ -464,6 +557,8 @@
     <Content Include="Resources\Audio\Backsound\Backsound.mp3" />
     <Content Include="Resources\Audio\Hit\Hit.wav" />
     <Content Include="Resources\Audio\Warning\Warning.wav" />
+    <None Include="Resources\score_334345.png" />
+    <None Include="Resources\big-fish_1594938.png" />
     <None Include="Resources\fish_2371907.png" />
     <None Include="Resources\website_16442090.png" />
     <None Include="Resources\gear_17451476.png" />
