@@ -54,6 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataDimas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataDimas.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dimas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +159,17 @@
     <EmbeddedResource Include="ReportDimas.resx">
       <DependentUpon>ReportDimas.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataDimas.xsc">
+      <DependentUpon>DataDimas.xsd</DependentUpon>
+    </None>
+    <None Include="DataDimas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataDimas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataDimas.xss">
+      <DependentUpon>DataDimas.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
