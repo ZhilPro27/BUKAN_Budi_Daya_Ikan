@@ -16,5 +16,16 @@ namespace BUKAN_Budi_Daya_Ikan_
         {
             InitializeComponent();
         }
+
+        private void ReportDimas_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
