@@ -23,6 +23,7 @@ namespace BUKAN_Budi_Daya_Ikan_.Game_Object
         private bool MovingRight = true;
         private int hitCount = 0;
         private int maxHits = 5;
+        public event Action<int> OnEnemyKilled;
 
         public Enemy()
         {
